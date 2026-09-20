@@ -310,8 +310,7 @@ class WikipediaClient:
             user_agent=self.user_agent,
             language=self.base_language,
             extract_format=wikipediaapi.ExtractFormat.WIKI,
-            headers=wiki_headers or None,
-            timeout=30.0
+            headers=wiki_headers or None
         )
         self.api_url = f"https://{self.base_language}.wikipedia.org/w/api.php"
 
